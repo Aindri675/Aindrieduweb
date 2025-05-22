@@ -15,7 +15,6 @@
       overflow-x: hidden;
     }
 
-    /* Blurred background image */
     body::before {
       content: '';
       position: fixed;
@@ -29,7 +28,6 @@
       z-index: -2;
     }
 
-    /* Dark overlay */
     body::after {
       content: '';
       position: fixed;
@@ -115,10 +113,27 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
+      margin-top: 10px;
     }
 
     .contact-form button:hover {
       background-color: #eee;
+    }
+
+    .facebook-link {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #3b5998;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .facebook-link:hover {
+      background-color: #2d4373;
     }
 
     footer {
@@ -161,6 +176,11 @@
 
         <button type="submit">Send Message</button>
       </form>
+
+      <!-- Facebook Page Link -->
+      <a class="facebook-link" href="https://www.facebook.com/share/19m2X3fWMW/?mibextid=wwXIfr" target="_blank">
+        Visit our Facebook Page
+      </a>
     </div>
   </main>
 
